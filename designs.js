@@ -1,10 +1,10 @@
-const input_rows;
-const input_cols;
-const input_color = "#000000";
+let  input_rows;
+let input_cols;
+let input_color = "#000000";
 /**@constructor
   *This function is used to create a table with different columns and rows length 
 */
-function makeGrid(e) {
+function makeGrid() {
   var table = document.getElementById("pixel_canvas");
   table.innerHTML = "";
   while(table.rows.length > 0)
@@ -30,7 +30,6 @@ function makeGrid(e) {
       });
     }
   }
-  e.preventDefault();
 }
 
 document.getElementById("sizePicker").addEventListener("submit", function(evt) {
